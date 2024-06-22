@@ -51,4 +51,29 @@ int main() {
     return 0;
 }
 ```
+<hr>
+<img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p3.PNG" align="right">
 
+```
+#include <iostream>
+
+int main() {
+    int n ;
+    std::cout<<"Enter the value of n : ";
+    std::cin>>n;
+    
+    int i = 1;
+    int count = 1;
+    while (i <= n) {
+        int j = 1;
+        while (j<=n){
+            std::cout<<count<<" ";
+            count++;
+            j++;
+            
+        }
+        std::cout << std::endl;
+        i++;
+    }
+```
+    
