@@ -76,4 +76,29 @@ int main() {
         i++;
     }
 ```
+
+<hr>
+
+<img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p4.PNG" align="left">
+
+```
+#include <iostream>
+
+int main () {
+    int n;
+    std::cout<<"Enter the value of n : ";
+    std::cin>> n;
     
+    int row = 1;
+    while (row <= n) {
+        int col = 1;
+        while (col <= row) {
+            std::cout<<"*";
+            col = col + 1; //or col++;
+        }
+        std::cout<<std::endl;
+        row++;
+    }
+    
+}
+```
