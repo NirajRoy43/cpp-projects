@@ -75,6 +75,11 @@ int main() {
         std::cout << std::endl;
         i++;
     }
+
+    return 0;
+
+}
+
 ```
 
 <hr>
@@ -99,6 +104,9 @@ int main () {
         std::cout<<std::endl;
         row++;
     }
-    
+
+    return 0;
+
 }
+
 ```
