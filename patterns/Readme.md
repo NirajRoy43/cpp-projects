@@ -1,6 +1,7 @@
-#Patterns Question in c++
+# Pattern Questions in c++
 
-<img src ="./p1.png" alt="error">
+
+   <img src ="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p1.PNG" alt="error" align="right">
 
 ```
 #include <iostream>
