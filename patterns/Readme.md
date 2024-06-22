@@ -110,3 +110,32 @@ int main () {
 }
 
 ```
+<hr>
+<img src = "https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p5.PNG " align = "right" >
+
+```
+#include <iostream>
+
+int main () {
+    int n;
+    std::cout << "Enter the value of n : ";
+    std::cin >> n;
+    
+    int row = 1;
+    while (row <= n) {
+        int col = 1;
+        int value = row;
+        
+        while (col <= row) {
+            std::cout << value << " ";
+            value = value + 1;
+            col = col + 1;
+        }
+        std::cout << std::endl;
+        row = row + 1;
+    }
+    
+    return 0;
+}
+
+```
