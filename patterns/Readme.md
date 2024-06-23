@@ -251,3 +251,39 @@ int main () {
     return 0;
 }
 ```
+<hr>
+<img src ="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p10.PNG" alt="error" align="left">
+
+```
+#include <iostream>
+
+int main () {
+    int n;
+    std::cout << "Enter the value of n : ";
+    std::cin >> n;
+    
+    int row = 1;
+    while (row <= n){
+        int space = n - row;         //space print karenge
+        while (space){
+            std::cout << " ";
+            space = space - 1;
+        }
+        int col = 1;                //1st triangle print
+        while (col<=row){
+            std::cout << col << " ";
+            col = col + 1;
+        }
+        int second = row - 1;       //2nd triangle print
+        while (second){
+            std::cout<<second<<" ";
+            second = second - 1;
+        }
+        std::cout << std::endl;
+        row = row + 1;
+    }
+    
+    return 0;
+}
+
+```
