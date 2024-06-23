@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
     document.addEventListener("DOMContentLoaded", function() {
         const sections = document.querySelectorAll(".pattern");
 
