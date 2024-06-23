@@ -29,8 +29,9 @@ main {
 
 .pattern img {
   max-width: 300px;
-   padding-top: 12%;
+   padding-top: 11%;
    padding-left: 34px;
+    padding-right: 34px;
     
 }
 
