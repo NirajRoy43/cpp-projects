@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Questions in C++</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pattern Questions in C++</h1>
+    </header>
+    <main>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p1.PNG" alt="Pattern 1" class="pattern-img right">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    int n;
+    std::cin&gt;&gt;n;
+
+    int i = 1;
+    while (i &lt;= n) {
+        int j = 1;
+        while (j&lt;=n){
+            std::cout&lt;&lt;j;
+            j++;
+        }
+        std::cout &lt;&lt; std::endl;
+        i++;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p2.PNG" alt="Pattern 2" class="pattern-img left">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    int n;
+    std::cout&lt;&lt;"Enter the value of n : ";
+    std::cin&gt;&gt;n;
+
+    int i = 1;
+    while (i &lt;= n) {
+        int j = 1;
+        while (j&lt;=n){
+            std::cout&lt;&lt;n-j+1;
+            j++;
+        }
+        std::cout &lt;&lt; std::endl;
+        i++;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p3.PNG" alt="Pattern 3" class="pattern-img right">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    int n;
+    std::cout&lt;&lt;"Enter the value of n : ";
+    std::cin&gt;&gt;n;
+
+    int i = 1;
+    int count = 1;
+    while (i &lt;= n) {
+        int j = 1;
+        while (j&lt;=n){
+            std::cout&lt;&lt;count&lt;&lt;" ";
+            count++;
+            j++;
+        }
+        std::cout &lt;&lt; std::endl;
+        i++;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p4.PNG" alt="Pattern 4" class="pattern-img left">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main () {
+    int n;
+    std::cout&lt;&lt;"Enter the value of n : ";
+    std::cin&gt;&gt; n;
+
+    int row = 1;
+    while (row &lt;= n) {
+        int col = 1;
+        while (col &lt;= row) {
+            std::cout&lt;&lt;"*";
+            col = col + 1;
+        }
+        std::cout&lt;&lt;std::endl;
+        row++;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p5.PNG" alt="Pattern 5" class="pattern-img right">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main () {
+    int n;
+    std::cout &lt;&lt; "Enter the value of n : ";
+    std::cin &gt;&gt; n;
+
+    int row = 1;
+    while (row &lt;= n) {
+        int col = 1;
+        int value = row;
+
+        while (col &lt;= row) {
+            std::cout &lt;&lt; value &lt;&lt; " ";
+            value = value + 1;
+            col = col + 1;
+        }
+        std::cout &lt;&lt; std::endl;
+        row = row + 1;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p6.PNG" alt="Pattern 6" class="pattern-img left">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main () {
+    int n;
+    std::cout &lt;&lt; "Enter the value of n : ";
+    std::cin &gt;&gt; n;
+
+    int row = 1;
+    while (row &lt;= n) {
+        int col = 1;
+
+        while (col &lt;= n) {
+            char ch = 'A' + row - 1;
+            std::cout &lt;&lt; ch &lt;&lt; " ";
+            ch = ch + 1;
+            col = col + 1;
+        }
+        std::cout &lt;&lt; std::endl;
+        row = row + 1;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p7.PNG" alt="Pattern 7" class="pattern-img right">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main () {
+    int n;
+    std::cout &lt;&lt; "Enter the value of n : ";
+    std::cin &gt;&gt; n;
+
+    int row = 1;
+    while (row &lt;= n) {
+        int col = 1;
+        while (col &lt;= row) {
+            char ch = 'A'+row-1;
+            std::cout &lt;&lt; ch &lt;&lt; " ";
+            ch = ch + 1;
+            col = col + 1;
+        }
+        std::cout&lt;&lt;std::endl;
+        row = row + 1;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p8.PNG" alt="Pattern 8" class="pattern-img left">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main () {
+    int n;
+    std::cout &lt;&lt; "Enter the value of n : ";
+    std::cin &gt;&gt; n;
+
+    int row = 1;
+    while (row &lt;= n) {
+        int col = 1;
+        char ch = 'A'+row-1;
+        while (col &lt;= row) {
+            std::cout &lt;&lt; ch &lt;&lt; " ";
+            ch = ch + 1;
+            col = col + 1;
+        }
+        std::cout&lt;&lt;std::endl;
+        row = row + 1;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p9.PNG" alt="Pattern 9" class="pattern-img right">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main () {
+    int n;
+    std::cout &lt;&lt; "Enter the value of n : ";
+    std::cin &gt;&gt; n;
+
+    int row = 1;
+    char ch = 'A'+row-1;
+    while (row &lt;= n) {
+        int col = 1;
+        while (col &lt;= row) {
+            std::cout &lt;&lt; ch &lt;&lt; " ";
+            ch = ch + 1;
+            col = col + 1;
+        }
+        std::cout&lt;&lt;std::endl;
+        row = row + 1;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <hr>
+        <section class="pattern">
+            <img src="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p10.PNG" alt="Pattern 10" class="pattern-img left">
+            <pre><code>
+#include &lt;iostream&gt;
+
+int main () {
+    int n;
+    std::cout &lt;&lt; "Enter the value of n : ";
+    std::cin &gt;&gt; n;
+
+    int row = 1;
+    while (row &lt;= n){
+        int space = n - row;
+        while (space){
+            std::cout &lt;&lt; " ";
+            space = space - 1;
+        }
+        int col = 1;
+        while (col&lt;=row){
+            std::cout &lt;&lt; col &lt;&lt; " ";
+            col = col + 1;
+        }
+        int second = row - 1;
+        while (second){
+            std::cout&lt;&lt;second&lt;&lt;" ";
+            second = second - 1;
+        }
+        std::cout &lt;&lt; std::endl;
+        row = row + 1;
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+    </main>
+</body>
+</html>
