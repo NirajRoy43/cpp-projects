@@ -167,3 +167,60 @@ int main () {
     return 0;
 }
 ```
+<hr>
+<img src ="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p7.PNG" alt="error" align="right">
+
+```
+#include <iostream>
+
+int main () {
+    int n;
+    std::cout << "Enter the value of n : ";
+    std::cin >> n;
+    
+    int row = 1;
+    while (row <= n) {
+        int col = 1;
+        while (col <= row) {
+         char ch = 'A'+row-1;          //while loop ke andar 
+            std::cout << ch << " ";
+            ch = ch + 1;
+            col = col + 1;
+        }
+        std::cout<<std::endl;
+        row = row + 1;
+    }
+    
+    return 0;
+}
+
+```
+<hr>
+<img src ="https://github.com/NirajRoy43/cpp-projects/blob/main/patterns/images/p8.PNG" alt="error" align="left">
+
+
+```
+#include <iostream>
+
+int main () {
+    int n;
+    std::cout << "Enter the value of n : ";
+    std::cin >> n;
+    
+    int row = 1;
+    while (row <= n) {
+        int col = 1;
+        char ch = 'A'+row-1;          //while loop ke bahar
+        while (col <= row) {
+            std::cout << ch << " ";
+            ch = ch + 1;
+            col = col + 1;
+        }
+        std::cout<<std::endl;
+        row = row + 1;
+    }
+    
+    return 0;
+}
+
+```
