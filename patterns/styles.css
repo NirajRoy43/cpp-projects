@@ -43,10 +43,12 @@ main {
 
 .pattern-img.left {
     float: left;
+    padding-top: 100px;
 }
 
 .pattern-img.right {
     float: right;
+    padding-top: 100px;
 }
 
 hr {
