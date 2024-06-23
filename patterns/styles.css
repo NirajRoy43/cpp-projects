@@ -31,6 +31,7 @@ main {
     max-width: 300px;
     border: 2px solid #35424a;
     margin: 0 20px 20px 0;
+    padding-top: 100px;
 }
 
 .pattern pre {
@@ -43,12 +44,10 @@ main {
 
 .pattern-img.left {
     float: left;
-    padding-top: 100px;
 }
 
 .pattern-img.right {
     float: right;
-    padding-top: 100px;
 }
 
 hr {
