@@ -3,69 +3,53 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
     text-align: center;
-    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
     padding: 20px;
 }
 
-section.pattern {
-    display: flex;
-    flex-direction: row-reverse; /* Align images to the right side */
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-    opacity: 0; /* Initially hide sections */
-    transform: translateY(20px); /* Move sections down */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+.pattern {
+    margin-bottom: 40px;
+    overflow: hidden;
 }
 
-section.pattern:nth-child(even) {
-    flex-direction: row; /* Align images to the left side on even sections */
-}
-
-.pattern-img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 20px; /* Adjust spacing between image and code */
+.pattern img {
+    max-width: 300px;
+    border: 2px solid #35424a;
+    margin: 0 20px 20px 0;
 }
 
 .pattern pre {
-    flex: 1; /* Take remaining space */
-    margin: 0;
-    padding: 10px;
-    background-color: #f0f0f0;
+    background: #333;
+    color: #fff;
+    padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
 }
 
-.pattern code {
-    display: block;
-    white-space: pre-wrap;
-    font-size: 0.9em;
-    color: #333;
+.pattern-img.left {
+    float: left;
 }
 
-.copy-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.pattern-img.right {
+    float: right;
 }
 
-.copy-icon:hover {
-    opacity: 0.7;
+hr {
+    border: 1px solid #ccc;
+    margin: 40px 0;
 }
