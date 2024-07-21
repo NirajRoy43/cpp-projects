@@ -6,5 +6,5 @@
            </br>
            
  <a href ="https://patterns-livid.vercel.app/" target = " _blank " >
- <img src="https://img.shields.io/badge/C++ Patterns-red?style=for-the-badge" alt=" ">
+ <img src="https://img.shields.io/badge/C++ Patterns-red?style=for-the-badge" alt="  ">
 </a>
